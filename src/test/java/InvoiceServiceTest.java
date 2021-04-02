@@ -12,4 +12,13 @@ public class InvoiceServiceTest {
         double fare = invoiceGenrator.calculateFare(distance, time);
         Assert.assertEquals(25,fare,0.0);
     }
+
+    @Test
+    void given_distance_and_time_should_written_total_min_fair_time() {
+        InvoiceGenrator invoiceGenrator = new InvoiceGenrator();
+        double distance = 0.1;
+        int time =1;
+        double fare = invoiceGenrator.calculateFare(distance, time);
+        Assert.assertEquals(5,fare,0.0);
+    }
 }
