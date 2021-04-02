@@ -5,5 +5,5 @@ public class InvoiceGenrator {
     public double calculateFare(double distance, int time) {
         return distance * MINMUM_COST_PER_PER_KILOMETER + time * COST_PER_TIME ;
     }
-    
+
 }
